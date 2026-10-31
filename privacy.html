@@ -4,7 +4,7 @@
 <nav><a href="index.html">Home</a><a href="support.html">Support</a></nav></div></div></header>
 <main class="wrap">
 
-<div class="card"><strong>The short version.</strong> Forely has no accounts, no ads, no analytics and no tracking. We don't run servers that receive your calendar data. Your events and reminders stay in Apple Calendar and Reminders on your device. All AI runs on your iPhone with Apple Intelligence. The only data that leaves your device goes to Apple: weather lookups, if you turn weather on, and your own iCloud, if you turn sync on.</div>
+<div class="card"><strong>The short version.</strong> Forely has no accounts, no ads, no analytics and no tracking. We don't run servers that receive your calendar data. Your events and reminders stay in Apple Calendar and Reminders on your device. All AI runs on your iPhone with Apple Intelligence. The only data that leaves your device goes to Apple: place lookups when you add a location to an event, weather lookups if you turn weather on, and your own iCloud if you turn sync on.</div>
 
 <p>This policy explains how Forely ("the app"), published by Vital Wellness Group LLC ("we", "us"), handles information. It applies to the Forely iOS app and its widgets, Live Activities, Siri and Shortcuts actions.</p>
 
@@ -15,19 +15,23 @@
 <p>With your permission, Forely reads and writes your events and reminders through Apple's EventKit framework, on your device. Time blocks Forely creates are saved as events in a "Forely" calendar in your Apple Calendar. Edits you make in Forely are written back to Apple Calendar and Reminders. This data is not sent to us. It syncs across your devices only through Apple's own Calendar and Reminders sync, under Apple's terms.</p>
 
 <h2>3. Forely's own data</h2>
-<p>Forely stores a small amount of its own data on your device: links between prep tasks and events, task durations, your Top 3 picks, outdoor flags, notification choices, themes and other settings, and any Ask Forely conversation you pin. If "Sync with iCloud" is on, this data is stored in your private iCloud database through Apple's CloudKit. We cannot read your private iCloud database. You can turn sync off in Settings → iCloud Sync.</p>
+<p>Forely stores a small amount of its own data on your device: links between prep tasks and events, task durations, your Top 3 picks, outdoor flags, notification choices, themes and other settings (including the weather city you set, if any), and any Ask Forely conversation you pin. If "Sync with iCloud" is on, this data is stored in your private iCloud database through Apple's CloudKit. We cannot read your private iCloud database. You can turn sync off in Settings → iCloud Sync.</p>
 
 <h2>4. AI features</h2>
 <p>Forely's AI features use Apple Intelligence, which runs on your device. This covers turning typed text into events and tasks, planning your day, suggesting prep tasks, writing summaries, and Ask Forely. Your text and schedule are processed by Apple's on-device model. They are not sent to us or to any third-party AI provider. On devices without Apple Intelligence, Forely uses its own built-in parsing, which also runs entirely on your device.</p>
 
-<h2>5. Weather and location</h2>
+<h2>5. Locations and weather</h2>
+<h3>Event locations</h3>
+<p>When you type in an event's Location field, Forely sends that text to Apple's MapKit to suggest matching places. MapKit is also used to look up a place you've typed when you save. This happens whether or not weather is turned on. The place you choose is saved to the event's location in Apple Calendar, with its map pin, just like adding a location in the Calendar app. It then syncs wherever that calendar syncs, which could be iCloud, Google or Exchange, under that service's terms.</p>
+<h3>Weather</h3>
 <p>If you turn on weather, Forely gets forecasts from Apple's WeatherKit service. To do this, Forely sends Apple a location in one of three forms:</p>
 <ul>
 <li>your device's approximate location, if you grant permission (Forely asks for it only when you turn weather on);</li>
 <li>a city you enter in Settings;</li>
-<li>for an event, the address or place you enter for that event.</li>
+<li>for an outdoor event, that event's location.</li>
 </ul>
-<p>When you type in an event's Location field, the text is sent to Apple's MapKit to suggest matching places, and the place you choose is converted to coordinates. Location is used only to fetch forecasts. It is not sent to us or to anyone else. Forecasts are cached on your device. Apple's handling of this data is covered by Apple's privacy policy.</p>
+<p>Forecast requests use coordinates rounded to about 1 km, and forecasts are cached on your device.</p>
+<p>Locations are never sent to us or to any AI service. Apple's handling of MapKit and WeatherKit requests is covered by Apple's privacy policy.</p>
 
 <h2>6. Purchases</h2>
 <p>Forely Pro is sold through Apple's App Store. Apple processes all payments. We never receive your payment details. Forely checks your purchase status with Apple's StoreKit on your device.</p>
